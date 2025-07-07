@@ -28,4 +28,4 @@ numpy
 matplotlib
 pytorch
 torchvision
-progressbar
+progressbar2
