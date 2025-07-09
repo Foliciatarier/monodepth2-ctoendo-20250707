@@ -154,7 +154,7 @@ def evaluate_depth(opt):
         transforms.ToTensor()])
     print("There are {:d} test samples\n".format(len(dataset)))
 
-    output_dir = 'output/CTo%s_%s_%d' % (opt.data_path[-9:-4], opt.model_name, opt.num_epochs+1)
+    output_dir = 'output/CTo%s_%s_%d' % (opt.data_path[-9:-4], opt.model_name, opt.num_epochs)
     output_gts = 'output/CTo%s_GT' % (opt.data_path[-9:-4])
     print(' -> Save to %s and %s' % (output_dir, output_gts))
     os.makedirs(output_gts, exist_ok=True)
